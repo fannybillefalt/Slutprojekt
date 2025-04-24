@@ -4,70 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/themes/splide-default.min.css">
+    <link rel="stylesheet" href="slutprojekt/slutprojekt.css">
 </head>
 <body>
     <header>
-        <a href="#" Abbes cyklar>
-            <img src="img/logga.jpg">
-        </a>
-        <nav class="nav__menu">
-            <ul>
-                <a class="nav__link" href="#">Hem</a>
-                <a class="nav__link" href="#">Herrcyklar</a>
-                <a class="nav__link" href="#">Damcyklar</a>
-                <a class="nav__link" href="#">Barncyklar</a>
-                <a class="nav__link" href="#">Tillbehör</a>
-                <a class="nav__link" href="#">Reservdelar</a>
-            </ul> 
-            <nav class ="search"> <a href="#">Sök...</a></nav>
-        </nav>
+        <div class="nav__container">
+            <section class="navbar">
+                
+                    <a class="logga" href="#" Abbes cyklar>
+                        <img src="img/logga.jpg">
+                    </a>
+        
+                        <nav class="nav__menu">
+                            <ul>
+                                <li><a class="nav__link" href="#">Hem</a></li>
+                                <li><a class="nav__link" href="#">Herrcyklar</a></li>
+                                <li><a class="nav__link" href="#">Damcyklar</a></li>
+                                <li><a class="nav__link" href="#">Barncyklar</a></li>
+                                <li><a class="nav__link" href="#">Tillbehör</a></li>
+                                <li><a class="nav__link" href="#">Reservdelar</a></li>
+                            </ul> 
+                        </nav>
+            </section>
+                <nav class ="search"> <a href="#">Sök...</a></nav>
+        </div>
     </header>
     <main>
-        <article class="card">
-            <img src="img/herrcykel.jpg" alt="Herrcyklar">
-            <article class="hercyklar">    
-                <h1>Herrcyklar</h1>
-                <a href="#">Visa mer...</a>
-            </article>    
-        </article>
-        <article class="card">
-            <img src="img/damcykel.jpg" alt="Damcyklar">
-            <article class="damcyklar">    
-                <h1>Damcyklar</h1>
-                <a href="#">Visa mer...</a>
-            </article> 
-        </article>
-        <article class="card">
-            <img src="img/barncykel.jpg" alt="Barncyklar">
-            <article class="barncyklar">    
-                <h1>Barncyklar</h1>
-                <a href="#">Visa mer...</a>
-            </article> 
-        </article>
+        <section class="cards">
+            <article class="card">
+                <img src="img/herrcykel.jpg" alt="Herrcyklar">
+                <article class="hercyklar">    
+                    <h1>Herrcyklar</h1>
+                    <a href="#">Visa mer...</a>
+                </article>    
+            </article>
+            <article class="card">
+                <img src="img/damcykel.jpg" alt="Damcyklar">
+                <article class="damcyklar">    
+                    <h1>Damcyklar</h1>
+                    <a href="#">Visa mer...</a>
+                </article> 
+            </article>
+            <article class="card">
+                <img src="img/barncykel.jpg" alt="Barncyklar">
+                <article class="barncyklar">    
+                    <h1>Barncyklar</h1>
+                    <a href="#">Visa mer...</a>
+                </article> 
+            </article>
+        </section>
         
-        <section>
-            <article>
+        <section class="info">
+            <aside>
                 <h1>Begagnade cyklar utan allt krångel!</h1>
                 <p>Rustar upp och servar begagnade cyklar i centrala Varberg. Alla cyklarna är genomgångna och säljs till aktuellt marknadsvärde. Ring eller smsa mig om du är intresserad av en cykel så bestämmer vi en tid för möte - vill du kika på flera samtidigt går det också bra! Frakt kan ordnas mot extra kostnad.</p>
                 <h2> 076 769 90 06</h2>
-            </article>
+            </aside>
         </section>
     </main>
-
-    <section>
-        <aside>
-            <ul>
-                <a href="#" crescent> <img src="img/crescent.png"></a>
-                <a href="#" frog> <img src="img/frog.png"></a>
-                <a href="#" monark> <img src="img/monark.png"></a>
-                <a href="#" scott> <img src="img/scott.jpg"></a>
-                <a href="#" sjösala> <img src="img/sjosala.png"></a>
-                <a href="#" skeppsshult> <img src="img/skeppshult.jpg"></a>
-                <a href="#" trek> <img src="img/trek.png"></a>
-                <a href="#" woom> <img src="img/woom.png"></a>
+    <section class="splide" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <img src="img/crescent.png" alt="">
+                </li>
+                <li class="splide__slide">
+                    <img src="img/frog.png" alt="">
+                </li>
+                <li class="splide__slide">
+                    <img src="img/monark.png" alt="">
+                </li>
+                <li class="splide__slide">
+                    <img src="img/scott.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                    <img src="img/sjosala.png" alt="">
+                </li>
+                <li class="splide__slide">
+                    <img src="img/skeppshult.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                    <img src="img/trek.png" alt="">
+                </li>
+                <li class="splide__slide">
+                    <img src="img/woom.png" alt="">
+                </li>
             </ul>
-        </aside>
+        </div>
     </section>
+
 
     <section class="footer">
         <footer>
@@ -116,5 +143,14 @@
             </a>
         </footer>
     </section>
+    <script>
+        //DOM script init
+        new Splide( '.splide', {
+            speed: 400,
+            type: 'loop',
+            drag: true,
+            pauseOnHover: true
+        }).mount();
+      </script>
 </body>
 </html>
