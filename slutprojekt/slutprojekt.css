@@ -1,38 +1,37 @@
 body {
     display: block;
     margin: 20px auto;
-    width: 70%;
+    width: 50%;
 
 }
 
 header {
-    background: #be9f36;
+    background: #FCC630;
     background-image: url("../img/header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
+    height: 200px;
     position: relative;
 }
 
 .nav img {
 width: 10%;
-border: dotted pink;
-
+padding-right: 60px;
 }
 
 .nav {
     display: flex;
     width: auto;
     align-items: center;
-    border: dotted;
+    padding-top: 20px;
+    padding-left: 100px;
     border: solid green;
 }
 
 .nav__menu {
-    background: #be9f36;
+    background: #FCC630;
     box-shadow: 3px 3px 5px rgba(0,0,0,3);
-    margin-left: auto;
     overflow: hidden;
 }
 
@@ -47,14 +46,13 @@ border: dotted pink;
 
 .nav__menu li {
     height: 2px;
+    margin-left: 10px;
 }
-
 
 .nav__menu a {
     height: 100%;
     color: black;
     text-decoration: none;
-
     display: flex;
     align-items: center;
     font-size: 12px;
@@ -62,11 +60,34 @@ border: dotted pink;
 
 .nav__link:hover {
     background: rgba(255, 255, 255, 0.598);
-    padding: 5px;
+
 }
 
-.search {
-align-items: center;
+.search__box {
+display: flex;
+justify-content: center;
+font-size: 12px;
+padding-top: 20px;
+}
+
+.search__input {
+    font-size: inherit;
+    border: 0.2em solid #FCC630;
+    border-radius: 0.5em 0 0 0.5em;
+    padding: 0.2em 0.5em;
+    color: #FCC630;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(0, 0, 0, 0.397);
+}
+
+.search__button {
+font-size: inherit;
+border: 0.2em solid #FCC630;
+border-radius: 0 0.5em 0.5em 0;
+background-color: rgba(0, 0, 0, 0.397);
+border-left: 0;
+padding: 0 0.75em;
+
 }
 
 main {
@@ -76,52 +97,49 @@ main {
 
 .cards{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     gap: 1rem;
- 
-    height: 400px;
+    padding-top: 5px;
 
+    border: solid red ;
 }
 
 .card{
-    flex:1;
+    height: 100%;
     box-shadow: 0px 0px 30px rgba(0,0,0,0.2);
     background: lightgray;
-    height: 400px;
-    margin-top: 20px;
+
  }
 
 .cards .card img{
 
     margin-top: 10px;
-    width: 250px;
-    background: rgb(255, 196, 0);
+    width: 150px;
+    background: #FCC630;
     box-shadow: 0px 0px 30px rgba(0,0,0,0.2);
 }
 
 h1 {
+    font-size: 14px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .button {
-    margin-left: 140px;
     color: black;
-    background: rgb(171, 134, 13);
+    background: #FCC630;
     text-decoration: none;
     border: 1px solid black;
-    padding: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
     border-radius: 3px;
-    margin-left: 80px ;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 16px;
-    font-weight: bold;
+    padding: 3px;
+    margin-left: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+
 }
 .info {
-    background: #be9f36;
+    background: #FCC630;
     height: 242px;
 
 }
