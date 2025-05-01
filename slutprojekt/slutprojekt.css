@@ -2,7 +2,6 @@ body {
     display: block;
     margin: 20px auto;
     width: 50%;
-
 }
 
 header {
@@ -22,7 +21,6 @@ padding-right: 60px;
 
 .nav {
     display: flex;
-
     align-items: center;
     padding-top: 20px;
     padding-left: 100px;
@@ -33,6 +31,8 @@ padding-right: 60px;
     background: #FCC630;
     box-shadow: 3px 3px 5px rgba(0,0,0,3);
     overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .nav__menu ul {
@@ -60,7 +60,6 @@ padding-right: 60px;
 
 .nav__link:hover {
     background: rgba(255, 255, 255, 0.598);
-
 }
 
 .search__box {
@@ -87,59 +86,64 @@ padding-right: 60px;
     background-color: rgba(0, 0, 0, 0.397);
     border-left: 0;
     padding: 0 0.75em;
-
 }
 
 main {
     background: white;
-
 }
 
 .cards{
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 1rem;
     padding-top: 5px;
-
-    border: solid red ;
+    padding-bottom: 5px;
+    width: min-content;
+    height: min-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card{
-    height: 100%;
-    box-shadow: 0px 0px 30px rgba(0,0,0,0.2);
-    background: lightgray;
-
+    flex: 1;
+    width: 250px;
+    height: 300px;
+    background: #d3d3d3;
  }
 
 .cards .card img{
-
     margin-top: 10px;
-    width: 150px;
-
+    width: 250px;
     box-shadow: 0px 0px 30px rgba(0,0,0,0.2);
 }
 
 h1 {
-    font-size: 14px;
+    font-size: 20px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 4px;
 }
 
 .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: black;
     background: #FCC630;
     text-decoration: none;
     border: 1px solid black;
-    border-radius: 3px;
-    padding: 3px;
-    margin-left: 40px;
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
-
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .info {
-
     background: #FCC630;
     width: 50%;
     margin-left: auto;
@@ -167,66 +171,71 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
+.splide .splide_slide img{
+    width: 100%;
+}
 
 footer {
-    height: 245px;
-    background: rgb(249, 246, 246);
+    height: 180px;
+    background: #FCC630;
     display: grid;
-    grid-template-columns:  repeat(6, 1fr);
-    grid-template-rows: repeat(3,1fr);
+    grid-template-columns:  repeat(7, 1fr);
+    grid-template-rows: repeat(1,1fr);
     grid-column-gap:10px;
     grid-row-gap: 1rem;
 }
 
 footer h2 {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
-
+    font-size: 14px;
 }
 
-.menu__items__one {
+.menu__items {
     list-style-type: none;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 11px;
     line-height: 18px;
+    padding: 0px;
 }
 
-.menu__items__two {
-    list-style-type: none;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 11px;
-    line-height: 18px;
-}
-
-.menu__items__three {
-    list-style-type: none;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 11px;
-    line-height: 18px;
-}
-
-.menu__items__four {
-    list-style-type: none;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 11px;
-    line-height: 18px;
-
-}
-
-.menu__link__one {
+.menu__link {
    text-decoration: none;
    color: black;
 }
 
-footer a {
-
-    grid-column: 7/2;
+.section__one {
+    width: min-content;
+    height: min-content;
+    grid-column: 2/2;
+    margin-top: 10px;
 }
 
-footer a img {
-    width: 100px;
+.section__two {
+    width: min-content;
+    height: min-content;
+    grid-column: 3/3;
+    margin-top: 10px;
+}
 
-    grid-column: 1/7;
+.section__three {
+    width: min-content;
+    height: min-content;
+    grid-column: 4/4;
+    margin-top: 10px;
+}
+
+.section__four {
+    width: 50%;
+    height: min-content;
+    grid-column: 5/5;
+    margin-top: 10px;
+}
+
+footer img {
+    width: 100px;
+    grid-column: 6/6;
+    padding-top: 30px;
+    padding-right: 30px;
 }
 

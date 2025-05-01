@@ -31,7 +31,7 @@
     <main>
         <section class="cards">
             <article class="card">
-                <img src="img/herrcykel.png" alt="Herrcyklar">
+                <img src="img/herrcykel.jpeg" alt="Herrcyklar">
                 <article class="herrcyklar">    
                     <h1>Herrcyklar</h1>
                     <a class="button" href="#">Visa mer...</a>
@@ -45,7 +45,7 @@
                 </article> 
             </article>
             <article class="card">
-                <img src="img/barncykel.png" alt="Barncyklar">
+                <img src="img/barncykel.jpeg" alt="Barncyklar">
                 <article class="barncyklar">    
                     <h1>Barncyklar</h1>
                     <a class="button" href="#">Visa mer...</a>
@@ -83,7 +83,7 @@
                     <img src="img/skeppshult.jpg" alt="">
                 </li>
                 <li class="splide__slide">
-                    <img src="img/trek.png" alt="">
+                    <img class="img_trek" src="img/trek.png" alt="">
                 </li>
                 <li class="splide__slide">
                     <img src="img/woom.png" alt="">
@@ -92,52 +92,48 @@
         </div>
     </section>
 
-
     <section class="footer">
         <footer>
             <section class="section__one">
                 <h2 class="footer__rubrik__one">Produkter</h2>
-                <ul class="menu__items__one">
-                    <li><a class="menu__link__one" href="#">Herrcyklar</a></li>
-                    <li><a class="menu__link__one" href="#">Damcyklar</a></li>
-                    <li><a class="menu__link__one" href="#">Barncyklar</a></li>
-                    <li><a class="menu__link__one" href="#">Tillbehör</a></li>
-                    <li><a class="menu__link__one" href="#">Reservdelar</a></li>
+                <ul class="menu__items">
+                    <li><a class="menu__link" href="#">Herrcyklar</a></li>
+                    <li><a class="menu__link" href="#">Damcyklar</a></li>
+                    <li><a class="menu__link" href="#">Barncyklar</a></li>
+                    <li><a class="menu__link" href="#">Tillbehör</a></li>
+                    <li><a class="menu__link" href="#">Reservdelar</a></li>
                 </ul>
             </section>
     
             <section class="section__two">
                 <h2 class="footer__rubrik__two">Hjälp</h2>
-                <ul class="menu__items__two">
-                    <li><a class="menu__link__one" href="#">Vad ingår?</a></li>
-                    <li><a class="menu__link__one" href="#">Användar- och kundinformation</a></li>
-                    <li><a class="menu__link__one" href="#">Köpvillkor</a></li>
-                    <li><a class="menu__link__one" href="#">Integritetspolicy</a></li>
+                <ul class="menu__items">
+                    <li><a class="menu__link" href="#">Vad ingår?</a></li>
+                    <li><a class="menu__link" href="#">Köpvillkor</a></li>
+                    <li><a class="menu__link" href="#">Integritetspolicy</a></li>
                 </ul>
             </section>
     
             <section class="section__three">
                 <h2 class="footer__rubrik__three">Guider</h2>
-                <ul class="menu__items__three">
-                    <li><a class="menu__link__one"href="#">FAQ</a></li>
-                    <li><a class="menu__link__one"href="#">Storleksguide</a></li>
-                    <li><a class="menu__link__one"href="#">Cykelguide</a></li>
-                    <li><a class="menu__link__one"href="#">Elcykelguide</a></li>
+                <ul class="menu__items">
+                    <li><a class="menu__link"href="#">FAQ</a></li>
+                    <li><a class="menu__link"href="#">Storleksguide</a></li>
+                    <li><a class="menu__link"href="#">Cykelguide</a></li>
+                    <li><a class="menu__link"href="#">Elcykelguide</a></li>
                 </ul>
             </section>
 
             <section class="section__four">
                 <h2 class="footer__rubrik__four">Kontakt</h2>
-                <ul class="menu__items__four">
+                <ul class="menu__items">
                     <li>Abbe's cyklar</li>
                     <li>076 769 90 06</li>
                     <li>Centrala Varberg</li>
                 </ul>
             </section>
 
-            <a href="#" Abbes cyklar>
-                <img src="img/logga.jpg">
-            </a>
+            <img src="img/logga.jpg">
         </footer>
     </section>
     <script>
@@ -146,7 +142,8 @@
             speed: 400,
             type: 'loop',
             drag: true,
-            pauseOnHover: true
+            pauseOnHover: true,
+            perPage: number = 3
         }).mount();
       </script>
 </body>
