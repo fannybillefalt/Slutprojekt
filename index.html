@@ -11,7 +11,7 @@
 <body>
     <header>
             <section class="nav">
-                        <img src="img/logga.jpg">
+                        <img src="img/logga.jpg" alt="Abbes cyklar logga">
                         <nav class="nav__menu">
                             <ul>
                                 <li><a class="nav__link" href="#">Hem</a></li>
@@ -117,10 +117,10 @@
             <section class="section__three">
                 <h2 class="footer__rubrik__three">Guider</h2>
                 <ul class="menu__items">
-                    <li><a class="menu__link"href="#">FAQ</a></li>
-                    <li><a class="menu__link"href="#">Storleksguide</a></li>
-                    <li><a class="menu__link"href="#">Cykelguide</a></li>
-                    <li><a class="menu__link"href="#">Elcykelguide</a></li>
+                    <li><a class="menu__link" href="#">FAQ</a></li>
+                    <li><a class="menu__link" href="#">Storleksguide</a></li>
+                    <li><a class="menu__link" href="#">Cykelguide</a></li>
+                    <li><a class="menu__link" href="#">Elcykelguide</a></li>
                 </ul>
             </section>
 
@@ -133,7 +133,7 @@
                 </ul>
             </section>
 
-            <img src="img/logga.jpg">
+            <img src="img/logga.jpg" alt="Abbes cyklar logga">
         </footer>
     </section>
     <script>
@@ -143,7 +143,12 @@
             type: 'loop',
             drag: true,
             pauseOnHover: true,
-            perPage: number = 3
+            perPage: number = 3,
+            autoplay: true,
+            breakpoints: {
+                768: { perPage: 2 },
+                480: { perPage: 1 }
+            }
         }).mount();
       </script>
 </body>
